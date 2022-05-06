@@ -20,7 +20,7 @@ function hourMove() {
     let theDate = new Date();
     let styleRotate = `transform:rotate(${theDate.getHours() * 10}deg)`;
     console.log(styleRotate);
-    elements[2].style = styleRotate;
+    elements[1].style = styleRotate;
   }, 1000);
   let theDate = new Date();
 }
