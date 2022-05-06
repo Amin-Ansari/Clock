@@ -55,3 +55,40 @@ body {
   background-color: #878787;
   z-index: 4;
 }
+.clock > div {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.second {
+  transform: rotate(80deg);
+}
+.minute {
+  transform: rotate(20deg);
+}
+.second::after {
+  content: "";
+  display: block;
+  width: 8px;
+  border-radius: 5px;
+  height: 65%;
+  background-color: green;
+}
+.minute::after {
+  content: "";
+  display: block;
+  width: 8px;
+  border-radius: 5px;
+  height: 60%;
+  background-color: red;
+}
+.hour::after {
+  content: "";
+  display: block;
+  width: 8px;
+  border-radius: 5px;
+  height: 55%;
+  background-color: orange;
+}
