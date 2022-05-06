@@ -43,3 +43,16 @@ body {
   left: 180px;
   top: 350px;
 }
+.between {
+  display: inline-block;
+  width: 6px;
+  height: 25px;
+  background-color: aliceblue;
+  margin: 5px;
+}
+.nine-to-twelve {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  transform: rotate(-60deg);
+}
