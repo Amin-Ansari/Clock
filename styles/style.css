@@ -21,31 +21,12 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  box-shadow: inset 10px 10px 15px #202020, inset -10px -10px 15px #202020;
+  box-shadow: inset 4px 4px 15px #202020, inset -4px -4px 15px #202020;
   position: relative;
-}
-.major-number {
-  font-size: 35px;
-  font-weight: bolder;
-  color: #ffaa00;
-}
-.tweleve {
-  left: 163px;
-  top: 8px;
-}
-.three {
-  left: 360px;
-  top: 170px;
-}
-.nine {
-  left: 8px;
-  top: 170px;
+  background: url(../images/Group\ 1.png) no-repeat center center;
+  background-size: contain;
 }
 
-.six {
-  left: 180px;
-  top: 350px;
-}
 .clock::before {
   content: "";
   position: absolute;
@@ -61,12 +42,6 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
-}
-.second {
-  transform: rotate(80deg);
-}
-.minute {
-  transform: rotate(20deg);
 }
 .second::after {
   content: "";
