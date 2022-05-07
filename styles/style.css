@@ -46,24 +46,24 @@ body {
 .second::after {
   content: "";
   display: block;
-  width: 8px;
+  width: 3px;
   border-radius: 5px;
-  height: 65%;
-  background-color: green;
+  height: 70%;
+  background-color: rgb(27, 245, 27);
 }
 .minute::after {
   content: "";
   display: block;
-  width: 8px;
+  width: 4px;
   border-radius: 5px;
-  height: 60%;
-  background-color: red;
+  height: 65%;
+  background-color: rgb(255, 0, 225);
 }
 .hour::after {
   content: "";
   display: block;
-  width: 8px;
+  width: 5px;
   border-radius: 5px;
   height: 55%;
-  background-color: orange;
+  background-color: rgb(255, 123, 0);
 }
