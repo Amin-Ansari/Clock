@@ -12,16 +12,16 @@ function clockWork() {
 }
 function secondMove() {
   setInterval(function () {
-    times[3].style.transform = `rotate(${currentTime.getSeconds() * 10}deg)`;
+    times[3].style.transform = `rotate(${currentTime.getSeconds() * 6}deg)`;
   }, 1000);
 }
 function minuteMove() {
   setInterval(function () {
-    times[2].style.transform = `rotate(${currentTime.getMinutes() * 10}deg)`;
+    times[2].style.transform = `rotate(${currentTime.getMinutes() * 6}deg)`;
   }, 1000);
 }
 function hourMove() {
   setInterval(function () {
-    times[1].style.transform = `rotate(${currentTime.getHours() * 10}deg)`;
+    times[1].style.transform = `rotate(${currentTime.getHours() * 30}deg)`;
   }, 1000);
 }
