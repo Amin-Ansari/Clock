@@ -1,34 +1,15 @@
-let elements = document.querySelectorAll("div");
+let times = document.querySelectorAll("div");
+setInterval(function () {
+  currentTime = new Date();
+}, 1000);
 
-function secondMove() {
-  let setInt = setInterval(function () {
-    let theDate = new Date();
-    console.log(theDate.getSeconds());
-    let styleRotate = `transform:rotate(${theDate.getSeconds() * 10}deg)`;
-    elements[3].style = styleRotate;
-  }, 1000);
-}
-function minuteMove() {
-  let setInt = setInterval(function () {
-    let theDate = new Date();
-    let styleRotate = `transform:rotate(${theDate.getMinutes() * 10}deg)`;
-    elements[2].style = styleRotate;
-  }, 1000);
-  let theDate = new Date();
-}
-function hourMove() {
-  let setInt = setInterval(function () {
-    let theDate = new Date();
-    let styleRotate = `transform:rotate(${theDate.getHours() * 10}deg)`;
-    elements[1].style = styleRotate;
-  }, 1000);
-  let theDate = new Date();
-}
+clockWork();
 
 function clockWork() {
   secondMove();
-  minuteMove();
-  hourMove();
 }
-
-clockWork();
+function secondMove() {
+  setInterval(function () {
+    times[3].style.transform = `rotateZ(${currentTime.getSeconds() * 10}deg)`;
+  }, 1000);
+}
