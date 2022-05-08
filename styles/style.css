@@ -23,7 +23,7 @@ body {
   border-radius: 100%;
   box-shadow: inset 4px 4px 15px #202020, inset -4px -4px 15px #202020;
   position: relative;
-  background: url(../images/Group\ 1.png) no-repeat center center;
+  background: url(../images/clock.png) no-repeat center center;
   background-size: contain;
 }
 
@@ -65,5 +65,5 @@ body {
   width: 5px;
   border-radius: 5px;
   height: 55%;
-  background-color: rgb(255, 123, 0);
+  background-color: rgb(255, 225, 0);
 }
